@@ -74,7 +74,7 @@ end
 
 RegisterNUICallback('UpdateVehicle', function(data, cb)
     local info, class, perfRating = exports['cw-performance']:getVehicleInfo(GetPlayersLastVehicle())
-    loal model, brand = getVehicleFromVehList(GetEntityModel(GetPlayersLastVehicle()))
+    local model, brand = getVehicleFromVehList(GetEntityModel(GetPlayersLastVehicle()))
     local data = {
         brand = brand,
         rating = class..''..perfRating,
